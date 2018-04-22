@@ -43,15 +43,12 @@ export default {
           directive: 'Change Directory',
           macInstruction: 'cd',
           pcIntstruction: 'cd',
-          example: 'cd [goes back to root]'
+          example: 'cd <dirname> [to cd into a folder]'
         },
         {
           macInstruction: 'cd ..',
           pcIntstruction: 'cd..',
           example: 'cd .. [to go up one folder]'
-        },
-        {
-          example: 'cd <dirname> [to cd into a folder]'
         },
         {
           directive: 'Print Working Directory',
