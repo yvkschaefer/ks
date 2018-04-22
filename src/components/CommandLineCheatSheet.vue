@@ -35,57 +35,91 @@ export default {
       msg: 'Command Line Cheat Sheet',
       items: [
         {
+          directive: 'Launch the Terminal',
+          macInstruction: 'command + space <Terminal>',
+          pcIntstruction: 'open Command Prompt from run menu'
+        },
+        {
           directive: 'Change Directory',
           macInstruction: 'cd',
-          pcIntstruction: 'PCTBD',
-          example: 'cd .. //to go back one folder'
+          pcIntstruction: 'cd',
+          example: 'cd [goes back to root]'
+        },
+        {
+          macInstruction: 'cd ..',
+          pcIntstruction: 'cd..',
+          example: 'cd .. [to go up one folder]'
+        },
+        {
+          example: 'cd <dirname> [to cd into a folder]'
         },
         {
           directive: 'Print Working Directory',
           macInstruction: 'pwd',
-          pcIntstruction: 'PCTBD',
+          pcIntstruction: 'chdir',
           example: 'output could be "usr/kschaefer/Workspace/code"'
+        },
+        {
+          directive: 'List Contents',
+          macInstruction: 'ls',
+          pcIntstruction: 'dir',
+          example: ''
         },
         {
           directive: 'Make Directory',
           macInstruction: 'mkdir',
-          pcIntstruction: 'PCTBD',
-          example: 'mkdir newDirectoryName'
+          pcIntstruction: 'mkdir',
+          example: 'mkdir <newdirname>'
         },
         {
           directive: 'Remove Directory',
           macInstruction: 'rmdir',
-          pcIntstruction: 'PCTBD',
-          example: 'rmdir directoryName (if directory is not empty, use rm -rf)'
+          pcIntstruction: 'del',
+          example: 'rmdir <diname>'
+        },
+        {
+          directive: 'Remove Directory and its contents',
+          macInstruction: 'rm -rf',
+          pcIntstruction: 'del',
+          example: 'rm -rf <dirname>'
         },
         {
           directive: 'Create/refresh a File',
           macInstruction: 'touch',
-          pcIntstruction: 'PCTBD',
+          pcIntstruction: 'echo.>',
           example: 'touch index.html'
         },
         {
-          directive: 'Move a file',
+          pcIntstruction: 'echo.>index.html'
+        },
+        {
+          directive: 'Rename/Move a file',
           macInstruction: 'mv',
-          pcIntstruction: 'PCTBD',
+          pcIntstruction: 'ren',
+          example: 'mv <source> <destination>'
+        },
+        {
           example: 'mv ~/Desktop/images ~/Documents/images'
         },
         {
           directive: 'Copy a file',
           macInstruction: 'cp',
-          pcIntstruction: 'PCTBD',
-          example: 'cp ~/Desktop/hello.js ~/Desktop/hello2.js'
+          pcIntstruction: 'copy',
+          example: 'cp <source> <destination>'
+        },
+        {
+          example: 'cp ~/Desktop/hello.js ~/Desktop/hello2.'
         },
         {
           directive: "Search a directory for it's contents",
           macInstruction: 'find .',
-          pcIntstruction: 'PCTBD',
+          pcIntstruction: '',
           example: 'find . | grep "*.js"'
         },
         {
           directive: 'Print the contents of a file',
           macInstruction: 'cat',
-          pcIntstruction: 'PCTBD',
+          pcIntstruction: 'more',
           example: 'cat index.html'
         }
       ]
