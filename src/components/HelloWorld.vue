@@ -1,29 +1,24 @@
 <template>
   <div class="hello">
-    <div class="flex">
-    <img src="../assets/profile.jpg">
-    <h1>{{ msg }}</h1>
-    </div>
+    <Header/>
     <h2 class="mid-page">Essentials</h2>
     <ul>
       <li>
-        <a
-          href="/cheat-sheet"
-          target="_blank"
+        <router-link
+          to="/cheat-sheet"
         >
           Cheat Sheet
-        </a>
+        </router-link>
       </li>
       <li>
-        <a
-          href="/sudoku"
-          target="_blank"
+        <router-link
+          to="/sudoku"
         >
           Sudoku
-        </a>
+        </router-link>
       </li>
     </ul>
-    <h2>Reach out!</h2>
+    <h2 class="contact">Reach out &#9829;</h2>
     <ul>
       <li>
         <a
@@ -54,8 +49,10 @@
 </template>
 
 <script>
+import Header from './Header'
 export default {
   name: 'HelloWorld',
+  components: {Header},
   // eslint-disable-next-line
   data() {
     return {
@@ -82,11 +79,22 @@ li {
 a {
   color: #42b983;
 }
+img {
+  border-radius: 50%;
+}
 .flex {
   display: flex;
-  margin-left: 25vw;
+  margin-left: 23vw;
+}
+.title {
+  font-weight: bold;
+  font-size: 3em;
+  margin-left: 3vw;
 }
 .mid-page {
-  margin-top: 5vh;
+  margin-top: 8vh;
+}
+.contact {
+  margin-top: 4vh;
 }
 </style>
